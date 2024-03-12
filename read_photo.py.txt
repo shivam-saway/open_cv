@@ -1,13 +1,11 @@
-“””
-This file shows how to read an image and create an image pixel matrix.
+"""This file shows how to read an image and create an image pixel matrix.
 The image matrix is a three-dimensional array.
 Each pixel is represented by an array of length 3 in BGR color space.
 Each element in the pixel array denotes the intensity of a particular color in that color space. For example, in array [71 90 80], 71 is the intensity of the blue color, 90 is the intensity of the green color, and 80 is the intensity of the red color.
 Now, an array of such pixels array denotes the horizontal resolution array or horizontal resolution of the image, and an array of horizontal resolution arrays denotes the vertical resolution array or vertical resolution of image.
 
 For example, if image pixel matrix img has shape like (4000, 6000, 3) then 4000 is the length of vertical resolution array, 6000 is the length of horizontal resolution array and 3 is the length of pixel array. Pixel array length depends on color space used. By default OpenCV uses BGR color space.
-“””
-
+"""
 import cv2 as cv
 img = cv.imread('photos/img3.jpg')
 print(img)
@@ -20,3 +18,4 @@ print(img.shape[2])
 print(img[0][0][1]) 
 cv.imshow('img3', img)
 cv.waitKey(0)
+
